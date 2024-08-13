@@ -1,0 +1,23 @@
+{
+  "name": "project_cv_screening",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Muhtasim Munem Mugdho <muhtasim.mugdho@bjitgroup.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "concurrently \"nodemon index.js\" \"python cv_processor.py\""
+  },
+  "dependencies": {
+    "axios": "^1.7.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.4",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4"
+  }
+}
