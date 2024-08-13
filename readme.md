@@ -138,7 +138,7 @@ def parse_cv():
     doc = nlp_model(cv_text)
 
     # Collect entities and their labels into a list of dictionaries
-    parsed_data = [{'text': ent.text, 'start': ent.start_char, 'end': ent.end_char, 'label': ent.label_} for ent in doc.ents]
+    parsed_data = [{'text': ent.text, 'label': ent.label_} for ent in doc.ents]
 
     # Return the parsed data as a JSON response
     return jsonify({'entities': parsed_data})
